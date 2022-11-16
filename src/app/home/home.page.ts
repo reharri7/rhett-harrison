@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private meta: Meta,
+    private title: Title
+  ) {
+    this.meta.addTags([
+      {name: 'description', content: 'Rhett Harrison. Software Engineer'},
+      {name: 'author', content: 'Rhett Harrison'},
+      {name: 'keywords', content: 'Rhett, Harrison, Software, SoftwareEngineer, Engineer'},
+      {name: 'robots', content: 'index, follow'}
+    ]);
+    this.setTitle('Rhett Harrison');
+  }
+  public setTitle(newTitle: string) {
+    this.title.setTitle(newTitle);
+  }
 
 }
