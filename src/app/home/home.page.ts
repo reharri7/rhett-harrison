@@ -13,9 +13,11 @@ export class HomePage {
     private title: Title
   ) {
     this.meta.addTags([
-      {name: 'description', content: 'Rhett Harrison. Software Engineer'},
+      {name: 'description', content: 'Rhett Harrison. Software Engineer based in California. Bachelor\'s ' +
+          'Degree in Software Engineering from Arizona State University.'},
       {name: 'author', content: 'Rhett Harrison'},
-      {name: 'keywords', content: 'Rhett, Harrison, Software, SoftwareEngineer, Engineer'},
+      {name: 'keywords', content: 'Rhett, Harrison, Software, SoftwareEngineer, ' +
+          'Engineer, Angular, Rust, Java, SpringBoot, California, Computer'},
       {name: 'robots', content: 'index, follow'}
     ]);
     this.setTitle('Rhett Harrison');
