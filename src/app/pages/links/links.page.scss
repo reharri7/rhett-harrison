@@ -1,0 +1,20 @@
+ion-item {
+  max-width: 60%;
+  margin: .5rem auto;
+  border-radius: 30px;
+  opacity: .733;
+}
+ion-label {
+  text-align: center;
+  white-space: normal !important;
+  text-overflow: unset !important;
+}
+ion-content {
+  --background: url("../../../../src/assets/aurora-borealis-background.jpg") center/cover no-repeat;
+}
+@media (max-width: 768px) {
+  ion-item {
+    min-width: 30%;
+    max-width: 100%;
+  }
+}
