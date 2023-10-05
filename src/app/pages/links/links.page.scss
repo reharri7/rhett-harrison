@@ -9,9 +9,6 @@ ion-label {
   white-space: normal !important;
   text-overflow: unset !important;
 }
-ion-content {
-  --background: url("../../../../src/assets/aurora-borealis-background.jpg") center/cover no-repeat;
-}
 @media (max-width: 768px) {
   ion-item {
     min-width: 30%;
